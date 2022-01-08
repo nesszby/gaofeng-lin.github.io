@@ -155,7 +155,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/08/Linux%20Shell%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/08/Linux%20Shell%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%20(1)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -168,7 +168,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/01/08/Linux%20Shell%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">Untitled</a>
+          <a href="/2022/01/08/Linux%20Shell%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%20(1)/" class="post-title-link" itemprop="url">Untitled</a>
         </h2>
 
         <div class="post-meta-container">
@@ -180,7 +180,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-01-08 15:23:14 / Modified: 15:23:04" itemprop="dateCreated datePublished" datetime="2022-01-08T15:23:14+08:00">2022-01-08</time>
+      <time title="Created: 2022-01-08 15:54:44 / Modified: 15:54:22" itemprop="dateCreated datePublished" datetime="2022-01-08T15:54:44+08:00">2022-01-08</time>
     </span>
 
   
@@ -193,7 +193,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>@[toc]</p>
+          <p>@[TOC]</p>
 <p><strong>git bash使用的是linux命令，创建文件夹用mkdir+文件夹名、创建文件用touch 或者 vim</strong></p>
 <h1 id="1-实际命令分析"><a href="#1-实际命令分析" class="headerlink" title="1 实际命令分析"></a>1 实际命令分析</h1><h2 id="1-1-git-log-–follow-–pretty-format-H-文件名-xargs-I-sh-c-‘git-show-文件名-gt-文件名-’"><a href="#1-1-git-log-–follow-–pretty-format-H-文件名-xargs-I-sh-c-‘git-show-文件名-gt-文件名-’" class="headerlink" title="1.1 git log –follow –pretty=format:%H 文件名 | xargs -I{} sh -c ‘git show {}:文件名 &gt; 文件名.{}’"></a>1.1 git log –follow –pretty=format:%H 文件名 | xargs -I{} sh -c ‘git show {}:文件名 &gt; 文件名.{}’</h2><p>提取git中某个文件的所有版本并按顺序命名:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log --follow --pretty=format:%H 文件名 | xargs -I&#123;&#125; sh -c &#x27;git show &#123;&#125;:文件名 &gt; 文件名.&#123;&#125;&#x27;</span><br></pre></td></tr></table></figure>
