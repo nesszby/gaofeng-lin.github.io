@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2022/01/15/%E5%B7%A5%E5%85%B7%EF%BC%88office%E3%80%81IDE%E3%80%81%E7%BC%96%E8%BE%91%E5%99%A8%E7%AD%89%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%9B%86%E5%90%88/</loc>
+    
+    <lastmod>2022-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2022/01/15/python/</loc>
+    
+    <lastmod>2022-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2022/01/15/%E4%B8%8B%E8%BD%BD%E8%BF%87%E6%85%A2/</loc>
+    
+    <lastmod>2022-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2022/01/15/Docker/</loc>
+    
+    <lastmod>2022-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/2022/01/15/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    
+    <lastmod>2022-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2022/01/15/git%E6%93%8D%E4%BD%9C/</loc>
     
     <lastmod>2022-01-15</lastmod>
@@ -12,15 +57,6 @@
   
   <url>
     <loc>http://example.com/2022/01/15/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/</loc>
-    
-    <lastmod>2022-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/01/15/%E5%B7%A5%E5%85%B7%EF%BC%88office%E3%80%81IDE%E3%80%81%E7%BC%96%E8%BE%91%E5%99%A8%E7%AD%89%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%9B%86%E5%90%88/</loc>
     
     <lastmod>2022-01-15</lastmod>
     
@@ -191,6 +227,48 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2022-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Mysql/</loc>
+    <lastmod>2022-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Docker/</loc>
+    <lastmod>2022-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/npm/</loc>
+    <lastmod>2022-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/yarn/</loc>
+    <lastmod>2022-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/python/</loc>
+    <lastmod>2022-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -230,6 +308,27 @@
   
   <url>
     <loc>http://example.com/categories/git/</loc>
+    <lastmod>2022-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2022-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/Docker/</loc>
+    <lastmod>2022-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/python/</loc>
     <lastmod>2022-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
