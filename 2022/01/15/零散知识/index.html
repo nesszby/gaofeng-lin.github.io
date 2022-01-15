@@ -19,31 +19,29 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="分区+挂载 分区 挂载 解除挂载        分区+挂载#分区#详细信息：来源该博客  在linux下，一个硬盘要先分区，然后才能挂载到目录上。和windows相同。    挂载# 1fdisk &#x2F;dev&#x2F;sdb 这一步是对sdb这个磁盘分区。接下来是格式化： 1mkfs -t ext4 &#x2F;dev&#x2F;sdb1  挂载：将分区和目录联系起来 1mount 设备名 目录名 1mount &#x2F;d">
+    <meta name="description" content="Windows重启打印机服务 Win10开机自启动软件 模糊照片变高清 Win10查看电脑配置信息和型号 使用dxdiag命令检查电脑配置 使用diskmtgt.msc命令进入磁盘管理，查看硬盘大小及已使用的空间。        Windows重启打印机服务#有时候需要重启打印机，采用命令行的方式。  Win+R ：services.msc  找到 Print Spooler 重启。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux知识点">
-<meta property="og:url" content="http://example.com/2022/01/15/Linux%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
+<meta property="og:title" content="零散知识">
+<meta property="og:url" content="http://example.com/2022/01/15/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/index.html">
 <meta property="og:site_name" content="Welcome to my Blog">
-<meta property="og:description" content="分区+挂载 分区 挂载 解除挂载        分区+挂载#分区#详细信息：来源该博客  在linux下，一个硬盘要先分区，然后才能挂载到目录上。和windows相同。    挂载# 1fdisk &#x2F;dev&#x2F;sdb 这一步是对sdb这个磁盘分区。接下来是格式化： 1mkfs -t ext4 &#x2F;dev&#x2F;sdb1  挂载：将分区和目录联系起来 1mount 设备名 目录名 1mount &#x2F;d">
+<meta property="og:description" content="Windows重启打印机服务 Win10开机自启动软件 模糊照片变高清 Win10查看电脑配置信息和型号 使用dxdiag命令检查电脑配置 使用diskmtgt.msc命令进入磁盘管理，查看硬盘大小及已使用的空间。        Windows重启打印机服务#有时候需要重启打印机，采用命令行的方式。  Win+R ：services.msc  找到 Print Spooler 重启。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/edd06e4319f24f1092d6f7bba9955937.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/a8ef1355fa2f4595a7b69da0b0bb50ec.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/0189f5afb0f24dde85c540fc5b8c887f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/bde5f9eba20b477bbeb551a9cb4bc246.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/d9ca57a5c9bf44589498a26a8baea9e5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
-<meta property="article:published_time" content="2022-01-15T08:06:24.154Z">
-<meta property="article:modified_time" content="2022-01-15T08:07:10.080Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7ac995ab180c4465968809c73ea881cd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_14,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b507309c987f41898b08f797c24c7f4c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_14,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/a53bf33bf4894fb7b610d2cf291071d0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="article:published_time" content="2022-01-15T08:12:32.828Z">
+<meta property="article:modified_time" content="2022-01-15T08:14:10.918Z">
 <meta property="article:author" content="Gaofeng Lin">
-<meta property="article:tag" content="Linux">
-<meta property="article:tag" content="运维">
-<meta property="article:tag" content="持续集成">
+<meta property="article:tag" content="IDE">
+<meta property="article:tag" content="编辑器">
+<meta property="article:tag" content="小知识">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/edd06e4319f24f1092d6f7bba9955937.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/7ac995ab180c4465968809c73ea881cd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_14,color_FFFFFF,t_70,g_se,x_16">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
     
-    <title>Linux知识点 · fi3ework&#39;s Studio</title>
+    <title>零散知识 · fi3ework&#39;s Studio</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -269,7 +267,7 @@
                 <a href="/">fi3ework&#39;s Studio.</a>
             </div>
             <div class="post-title header-element">
-                <a href="#" class="post-name">Linux知识点</a>
+                <a href="#" class="post-name">零散知识</a>
             </div>
         </div>
     
@@ -315,7 +313,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-                Linux知识点
+                零散知识
             <!-- 404 -->
             
         </h1>
@@ -335,18 +333,18 @@
                     <div class= post-intro-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="Linux">Linux</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="IDE">IDE</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="运维">运维</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="编辑器">编辑器</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="持续集成">持续集成</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="小知识">小知识</a>
     
 </div>
 
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">131</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">422</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -512,10 +510,12 @@
 <!-- toc -->
 
 <ul>
-<li><a href="#fen-qu-gua-zai">分区+挂载</a><ul>
-<li><a href="#fen-qu">分区</a></li>
-<li><a href="#gua-zai">挂载</a></li>
-<li><a href="#jie-chu-gua-zai">解除挂载</a></li>
+<li><a href="#windows-chong-qi-da-yin-ji-fu-wu">Windows重启打印机服务</a></li>
+<li><a href="#win10-kai-ji-zi-qi-dong-ruan-jian">Win10开机自启动软件</a></li>
+<li><a href="#mo-hu-zhao-pian-bian-gao-qing">模糊照片变高清</a></li>
+<li><a href="#win10-cha-kan-dian-nao-pei-zhi-xin-xi-he-xing-hao">Win10查看电脑配置信息和型号</a><ul>
+<li><a href="#shi-yong-dxdiag-ming-ling-jian-cha-dian-nao-pei-zhi">使用dxdiag命令检查电脑配置</a></li>
+<li><a href="#shi-yong-diskmtgt-msc-ming-ling-jin-ru-ci-pan-guan-li-cha-kan-ying-pan-da-xiao-ji-yi-shi-yong-de-kong-jian">使用diskmtgt.msc命令进入磁盘管理，查看硬盘大小及已使用的空间。</a></li>
 </ul>
 </li>
 </ul>
@@ -523,34 +523,32 @@
 
 </div>
 
-<h1><span id="fen-qu-gua-zai">分区+挂载</span><a href="#fen-qu-gua-zai" class="header-anchor">#</a></h1><h2><span id="fen-qu">分区</span><a href="#fen-qu" class="header-anchor">#</a></h2><p>详细信息：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_30604989/article/details/81163270">来源该博客</a><br><img src="https://img-blog.csdnimg.cn/edd06e4319f24f1092d6f7bba9955937.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<ol>
-<li>在linux下，一个硬盘要先分区，然后才能挂载到目录上。和windows相同。</li>
-</ol>
-<p> <img src="https://img-blog.csdnimg.cn/a8ef1355fa2f4595a7b69da0b0bb50ec.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2><span id="gua-zai">挂载</span><a href="#gua-zai" class="header-anchor">#</a></h2><p><img src="https://img-blog.csdnimg.cn/0189f5afb0f24dde85c540fc5b8c887f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fdisk /dev/sdb</span><br></pre></td></tr></table></figure>
-<p>这一步是对sdb这个磁盘分区。<br><img src="https://img-blog.csdnimg.cn/bde5f9eba20b477bbeb551a9cb4bc246.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>接下来是格式化：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs -t ext4 /dev/sdb1</span><br></pre></td></tr></table></figure>
-
-<p>挂载：将分区和目录联系起来</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount 设备名 目录名</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sdb1 /home/newdisk</span><br></pre></td></tr></table></figure>
-
-<p>这个方法重启会失效，设置永久挂载。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/fstab</span><br></pre></td></tr></table></figure>
-<h2><span id="jie-chu-gua-zai">解除挂载</span><a href="#jie-chu-gua-zai" class="header-anchor">#</a></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">umount 设备名</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/d9ca57a5c9bf44589498a26a8baea9e5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h1><span id="windows-chong-qi-da-yin-ji-fu-wu">Windows重启打印机服务</span><a href="#windows-chong-qi-da-yin-ji-fu-wu" class="header-anchor">#</a></h1><p>有时候需要重启打印机，采用命令行的方式。</p>
+<blockquote>
+<p>Win+R ：services.msc  找到 Print Spooler 重启。</p>
+</blockquote>
+<h1><span id="win10-kai-ji-zi-qi-dong-ruan-jian">Win10开机自启动软件</span><a href="#win10-kai-ji-zi-qi-dong-ruan-jian" class="header-anchor">#</a></h1><p>把该应用程序的快捷方式放到“系统启动文件夹”里；</p>
+<blockquote>
+<p>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</p>
+</blockquote>
+<h1><span id="mo-hu-zhao-pian-bian-gao-qing">模糊照片变高清</span><a href="#mo-hu-zhao-pian-bian-gao-qing" class="header-anchor">#</a></h1><p>访问 </p>
+<blockquote>
+<p>bigjpg.com</p>
+</blockquote>
+<p>将照片扔上去就好。</p>
+<h1><span id="win10-cha-kan-dian-nao-pei-zhi-xin-xi-he-xing-hao">Win10查看电脑配置信息和型号</span><a href="#win10-cha-kan-dian-nao-pei-zhi-xin-xi-he-xing-hao" class="header-anchor">#</a></h1><h2><span id="shi-yong-dxdiag-ming-ling-jian-cha-dian-nao-pei-zhi">使用dxdiag命令检查电脑配置</span><a href="#shi-yong-dxdiag-ming-ling-jian-cha-dian-nao-pei-zhi" class="header-anchor">#</a></h2><p> 按下键盘上的Win+R组合键，打开运行窗口，输入dxdiag，点击确定。<br> <img src="https://img-blog.csdnimg.cn/7ac995ab180c4465968809c73ea881cd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_14,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>在打开的页面中就可以看到当前计算机名称、操作系统、CPU、内存等重要信息。</p>
+<h2><span id="shi-yong-diskmtgt-msc-ming-ling-jin-ru-ci-pan-guan-li-cha-kan-ying-pan-da-xiao-ji-yi-shi-yong-de-kong-jian">使用diskmtgt.msc命令进入磁盘管理，查看硬盘大小及已使用的空间。</span><a href="#shi-yong-diskmtgt-msc-ming-ling-jin-ru-ci-pan-guan-li-cha-kan-ying-pan-da-xiao-ji-yi-shi-yong-de-kong-jian" class="header-anchor">#</a></h2><p><img src="https://img-blog.csdnimg.cn/b507309c987f41898b08f797c24c7f4c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_14,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>465.76GB就是500G的硬盘，不要怀疑是不是奸商给你的是假货，这是没有问题的，硬盘的生产厂家在生产硬盘时用的是1000进制，即1GB=1000MB；1MB=1000KB；1KB=1000B。而电脑的计算进制是1024，即1G=1024MB；1MB=1024KB；1kB=1024B，这样就会造成电脑检测出来的容量比标称容量小。</p>
+<p>  此外，除了以上方法也可以进入设备管理器里查看电脑配置信息，步骤：右击桌面上的“计算机”–&gt;“设备管理器”，在设备管理器中就可以看见电脑配置情况了</p>
+<p><img src="https://img-blog.csdnimg.cn/a53bf33bf4894fb7b610d2cf291071d0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
 
     </article>
     <!-- license -->
     
         <div class="license-wrapper">
             <p>Author：<a href="http://example.com">Gaofeng Lin</a>
-            <p>Link：<a href="http://example.com/2022/01/15/Linux%E7%9F%A5%E8%AF%86%E7%82%B9/">http://example.com/2022/01/15/Linux%E7%9F%A5%E8%AF%86%E7%82%B9/</a>
-            <p>Publish date：<a href="http://example.com/2022/01/15/Linux%E7%9F%A5%E8%AF%86%E7%82%B9/">January 15th 2022, 4:06:24 pm</a>
-            <p>Update date：<a href="http://example.com/2022/01/15/Linux%E7%9F%A5%E8%AF%86%E7%82%B9/">January 15th 2022, 4:07:10 pm</a>
+            <p>Link：<a href="http://example.com/2022/01/15/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/">http://example.com/2022/01/15/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/</a>
+            <p>Publish date：<a href="http://example.com/2022/01/15/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/">January 15th 2022, 4:12:32 pm</a>
+            <p>Update date：<a href="http://example.com/2022/01/15/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/">January 15th 2022, 4:14:10 pm</a>
             <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -559,16 +557,16 @@
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href="/2022/01/15/%E5%B7%A5%E5%85%B7%EF%BC%88office%E3%80%81IDE%E3%80%81%E7%BC%96%E8%BE%91%E5%99%A8%E7%AD%89%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%9B%86%E5%90%88/" title="工具（office、IDE、编辑器等）快捷键集合">
-                    <div class="nextTitle">工具（office、IDE、编辑器等）快捷键集合</div>
+                <a href="/2022/01/15/git%E6%93%8D%E4%BD%9C/" title="git操作">
+                    <div class="nextTitle">git操作</div>
                 </a>
             
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2022/01/15/linux%E5%91%BD%E4%BB%A4/" title="Linux常用命令">
-                    <div class="prevTitle">Linux常用命令</div>
+                <a href="/2022/01/15/%E5%B7%A5%E5%85%B7%EF%BC%88office%E3%80%81IDE%E3%80%81%E7%BC%96%E8%BE%91%E5%99%A8%E7%AD%89%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%9B%86%E5%90%88/" title="工具（office、IDE、编辑器等）快捷键集合">
+                    <div class="prevTitle">工具（office、IDE、编辑器等）快捷键集合</div>
                 </a>
             
         </li>
@@ -708,7 +706,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">分区+挂载</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.1.</span> <span class="toc-text">分区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.2.</span> <span class="toc-text">挂载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.3.</span> <span class="toc-text">解除挂载</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Windows重启打印机服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Win10开机自启动软件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">模糊照片变高清</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">Win10查看电脑配置信息和型号</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.1.</span> <span class="toc-text">使用dxdiag命令检查电脑配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.2.</span> <span class="toc-text">使用diskmtgt.msc命令进入磁盘管理，查看硬盘大小及已使用的空间。</span></a></li></ol></li></ol>
             </div>
         
         <!-- sidebar -->
