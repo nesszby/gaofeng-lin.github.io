@@ -429,6 +429,160 @@
             
         
         <article class="index-post">
+            <a class="abstract-title" href="/2022/01/15/Linux%E7%9F%A5%E8%AF%86%E7%82%B9/">
+                
+                <span class="abstract-title-text">Linux知识点</span>
+            </a>
+            <div class="abstract-content">
+                
+
+
+
+
+分区+挂载
+分区
+挂载
+解除挂载
+
+
+
+
+
+
+
+分区+挂载#分区#详细信息：来源该博客
+
+在linux下，一个硬盘要先分区，然后才能挂载到目录上。和windows相同。
+
+ 
+挂载#
+1fdisk /dev/sdb
+这一步是对sdb这个磁盘分区。接下来是格式化：
+1mkfs -t ext4 /dev/sdb1
+
+挂载：将分区和目录联系起来
+1mount 设备名 目录名
+1mount /dev/sdb1 /home/newdisk
+
+这个方法重启会失效，设置永久挂载。
+1vim /etc/fstab
+解除挂载#1umount 设备名
+
+
+
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/01/15">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/15</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Linux">Linux</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="运维">运维</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="持续集成">持续集成</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2022/01/15/linux%E5%91%BD%E4%BB%A4/">
+                
+                <span class="abstract-title-text">Linux常用命令</span>
+            </a>
+            <div class="abstract-content">
+                
+
+
+
+
+复制/移动文件、文件改名
+查看端口
+查看某个服务的状态
+lsof -i:端口号
+netstat -tunlp | grep 端口号  
+kill(杀死进程)
+telnet(检测端口是否可用)
+
+
+touch命令(创建文件)
+cat命令(显示文件内容)
+Centos7特性
+防火墙
+开启端口（以80为例）
+重启防火墙
+
+
+修改主机名
+debian/ubuntu系列
+redhat/centos系列
+
+
+vim相关操作
+复制
+粘贴
+删除
+查找
+设置行号
+跳到指定行
+文件上下翻转
+撤销上一步操作
+vim编辑
+多窗口功能
+缩进
+
+
+设置 SSH 通过密钥登录
+制作密钥对
+在服务器上安装公钥...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/01/15">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/15</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Linux">Linux</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="运维">运维</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
             <a class="abstract-title" href="/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/">
                 
                 <span class="abstract-title-text">Jenkins知识点</span>
@@ -661,7 +815,21 @@ git branch -r | xargs -d/ -n1 | grep -v ‘origin’ | xargs -I{} sh -c ‘mkdir
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
         
         
         
@@ -674,7 +842,7 @@ git branch -r | xargs -d/ -n1 | grep -v ‘origin’ | xargs -I{} sh -c ‘mkdir
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 4
+        Total : 6
         </div>
         <!-- search  -->
         
@@ -737,6 +905,27 @@ git branch -r | xargs -d/ -n1 | grep -v ‘origin’ | xargs -I{} sh -c ‘mkdir
         <li class="archive-post-item">
             <span class="archive-post-date">Invalid date</span>
             <a class="archive-post-title" href="/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/">Jenkins知识点</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2022 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/15</span>
+            <a class="archive-post-title" href="/2022/01/15/linux%E5%91%BD%E4%BB%A4/">Linux常用命令</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/15</span>
+            <a class="archive-post-title" href="/2022/01/15/Linux%E7%9F%A5%E8%AF%86%E7%82%B9/">Linux知识点</a>
         </li>
     
     </div>
