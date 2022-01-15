@@ -444,6 +444,122 @@
             
         
         <article class="index-post">
+            <a class="abstract-title" href="/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/">
+                
+                <span class="abstract-title-text">Jenkins知识点</span>
+            </a>
+            <div class="abstract-content">
+                
+
+
+
+
+流水线语法找不到模板
+Publish over ssh连接失败
+无法执行远程脚本
+
+
+
+
+
+流水线语法找不到模板#有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了publish over ssh插件就会出现这个选项，但是当时没有。
+解决办法：重启jenkins。初始域名后面加/restart
+1ip:port/restart
+Publish over ssh连接失败#解决办法：这里要填密钥的密码
+无法执行远程脚本#
+背景：创建一个jenkins作业，通过ssh在另一台服务器上运行脚本，实现从harbor仓库拉取docker镜像，并运行。问题： 运行j...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/01/15">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/15</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="运维">运维</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Jenkins">Jenkins</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="持续集成">持续集成</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2022/01/15/Linux%20Shell%E5%91%BD%E4%BB%A4/">
+                
+                <span class="abstract-title-text">Linux Shell 命令</span>
+            </a>
+            <div class="abstract-content">
+                
+
+
+
+
+实际命令分析
+git log –follow –pretty=format:%H 文件名 | xargs -I{} sh -c ‘git show {}:文件名 &gt; 文件名.{}’
+git branch -r | xargs -d/ -n1 | grep -v ‘origin’ | xargs -I{} sh -c ‘mkdir “C:\Users\76585\Desktop\try{}” ‘
+
+
+代码分析
+读取文件夹中的文件名，并存入列表
+
+
+变量
+获取变量字符串长度
+变量截取
+变量的字符串替换
+删除字符串
+变量为空时赋默认值
+字符串拼接
+单引号内引入变量
+实战：统计文...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/01/15">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/15</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Linux">Linux</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="运维">运维</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
             <a class="abstract-title" href="/2022/01/15/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E7%9F%A5%E8%AF%86/">
                 
                 <span class="abstract-title-text">前端知识</span>
@@ -500,44 +616,6 @@ React#启动流程#重点关注三个文件：
     
 </div>
 
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2022/01/09/1/">
-                
-                <span class="abstract-title-text">[Untitled Post]</span>
-            </a>
-            <div class="abstract-content">
-                
-
-
-    
-    
-    
-    Document
-
-
-    hello world#
-
-
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/01/09">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/09</span>
-                </div>
-                <!-- tags -->
                 
             </div>
         </article>
@@ -786,7 +864,14 @@ React#启动流程#重点关注三个文件：
         
         
         
+        
+        
+        
+        
+        
     
+        
+        
         
         
         
@@ -797,7 +882,7 @@ React#启动流程#重点关注三个文件：
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 3
+        Total : 4
         </div>
         <!-- search  -->
         
@@ -807,21 +892,6 @@ React#启动流程#重点关注三个文件：
     
         
             
-            
-            <div class="archive-year"> Invalid date </div>
-            <ul class="year-list">
-            
-        
-        <li class="archive-post-item">
-            <span class="archive-post-date">Invalid date</span>
-            <a class="archive-post-title" href="/2022/01/09/1/">[Untitled Post]</a>
-        </li>
-    
-        
-            
-            
-                
-                </ul>
             
             <div class="archive-year"> 2022 </div>
             <ul class="year-list">
@@ -847,6 +917,36 @@ React#启动流程#重点关注三个文件：
             <a class="archive-post-title" href="/2022/01/15/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E7%9F%A5%E8%AF%86/">前端知识</a>
         </li>
     
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2022 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/15</span>
+            <a class="archive-post-title" href="/2022/01/15/Linux%20Shell%E5%91%BD%E4%BB%A4/">Linux Shell 命令</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> Invalid date </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span>
+            <a class="archive-post-title" href="/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/">Jenkins知识点</a>
+        </li>
+    
     </div>
 </div>
 
@@ -868,6 +968,26 @@ React#启动流程#重点关注三个文件：
                 JavaScript
             </span>
         
+            <span class="sidebar-tag-name" data-tags="Linux">
+                <span class="iconfont-archer">&#xe606;</span>
+                Linux
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="运维">
+                <span class="iconfont-archer">&#xe606;</span>
+                运维
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="Jenkins">
+                <span class="iconfont-archer">&#xe606;</span>
+                Jenkins
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="持续集成">
+                <span class="iconfont-archer">&#xe606;</span>
+                持续集成
+            </span>
+        
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
@@ -882,6 +1002,16 @@ React#启动流程#重点关注三个文件：
         <span class="sidebar-category-name" data-categories="前端开发">
             <span class="iconfont-archer">&#xe60a;</span>
             前端开发
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="Linux">
+            <span class="iconfont-archer">&#xe60a;</span>
+            Linux
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="Jenkins">
+            <span class="iconfont-archer">&#xe60a;</span>
+            Jenkins
         </span>
     
     </div>
