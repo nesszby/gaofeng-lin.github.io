@@ -19,12 +19,12 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="流水线语法找不到模板 Publish over ssh连接失败 无法执行远程脚本      流水线语法找不到模板#有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了publish over ssh插件就会出现这个选项，但是当时没有。 解决办法：重启jenkins。初始域名后面加&#x2F;restart 1ip:port&#x2F;restart Publish over ssh连">
+    <meta name="description" content="流水线语法找不到模板#有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了publish over ssh插件就会出现这个选项，但是当时没有。 解决办法：重启jenkins。初始域名后面加&#x2F;restart 1ip:port&#x2F;restart Publish over ssh连接失败#解决办法：这里要填密钥的密码 无法执行远程脚本# 背景：创建一个jenkins作业，通过ssh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jenkins知识点">
 <meta property="og:url" content="http://example.com/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
 <meta property="og:site_name" content="Welcome to my Blog">
-<meta property="og:description" content="流水线语法找不到模板 Publish over ssh连接失败 无法执行远程脚本      流水线语法找不到模板#有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了publish over ssh插件就会出现这个选项，但是当时没有。 解决办法：重启jenkins。初始域名后面加&#x2F;restart 1ip:port&#x2F;restart Publish over ssh连">
+<meta property="og:description" content="流水线语法找不到模板#有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了publish over ssh插件就会出现这个选项，但是当时没有。 解决办法：重启jenkins。初始域名后面加&#x2F;restart 1ip:port&#x2F;restart Publish over ssh连接失败#解决办法：这里要填密钥的密码 无法执行远程脚本# 背景：创建一个jenkins作业，通过ssh">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/e93ad73b8c094398bdfc1b49f5388317.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/72c9e5709ded45fcadfc75afc94e0baf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/cf2801f8c63a42bb8e91adf61a3f8590.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/30e99ed138474b01800e583e61389dfd.png">
 <meta property="article:published_time" content="2022-01-15T07:59:58.635Z">
-<meta property="article:modified_time" content="2022-01-15T08:00:56.587Z">
+<meta property="article:modified_time" content="2022-01-15T08:30:25.787Z">
 <meta property="article:author" content="Gaofeng Lin">
 <meta property="article:tag" content="运维">
 <meta property="article:tag" content="Jenkins">
@@ -347,7 +347,7 @@
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">382</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">357</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -508,20 +508,7 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <div class="toc">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#liu-shui-xian-yu-fa-zhao-bu-dao-mo-ban">流水线语法找不到模板</a></li>
-<li><a href="#publish-over-ssh-lian-jie-shi-bai">Publish over ssh连接失败</a></li>
-<li><a href="#wu-fa-zhi-xing-yuan-cheng-jiao-ben">无法执行远程脚本</a></li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-<h1><span id="liu-shui-xian-yu-fa-zhao-bu-dao-mo-ban">流水线语法找不到模板</span><a href="#liu-shui-xian-yu-fa-zhao-bu-dao-mo-ban" class="header-anchor">#</a></h1><p><img src="https://img-blog.csdnimg.cn/e93ad73b8c094398bdfc1b49f5388317.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了<strong>publish over ssh插件</strong>就会出现这个选项，但是当时没有。</p>
+        <h1><span id="liu-shui-xian-yu-fa-zhao-bu-dao-mo-ban">流水线语法找不到模板</span><a href="#liu-shui-xian-yu-fa-zhao-bu-dao-mo-ban" class="header-anchor">#</a></h1><p><img src="https://img-blog.csdnimg.cn/e93ad73b8c094398bdfc1b49f5388317.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了<strong>publish over ssh插件</strong>就会出现这个选项，但是当时没有。</p>
 <p><strong>解决办法：</strong><br>重启jenkins。初始域名后面加/restart</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip:port/restart</span><br></pre></td></tr></table></figure>
 <h1><span id="publish-over-ssh-lian-jie-shi-bai">Publish over ssh连接失败</span><a href="#publish-over-ssh-lian-jie-shi-bai" class="header-anchor">#</a></h1><p><img src="https://img-blog.csdnimg.cn/72c9e5709ded45fcadfc75afc94e0baf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><strong>解决办法：</strong><br>这里要填密钥的密码</p>
@@ -552,7 +539,7 @@
             <p>Author：<a href="http://example.com">Gaofeng Lin</a>
             <p>Link：<a href="http://example.com/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/">http://example.com/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/</a>
             <p>Publish date：<a href="http://example.com/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/">January 15th 2022, 3:59:58 pm</a>
-            <p>Update date：<a href="http://example.com/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/">January 15th 2022, 4:00:56 pm</a>
+            <p>Update date：<a href="http://example.com/2022/01/15/Jenkins%E7%9F%A5%E8%AF%86%E7%82%B9/">January 15th 2022, 4:30:25 pm</a>
             <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     

@@ -449,34 +449,16 @@
                 <span class="abstract-title-text">python</span>
             </a>
             <div class="abstract-content">
-                
+                所遇问题#输出格式有问题#背景：python2.7，IDE：VSCode源码：two.txt:
+输出：预期应该为商品，单价，数量。
+修改最后一行的print
+打包pip install 包#
+背景：内网需要安装python和一些包，无法连互联网，只能外网下载再u盘拷过去。
 
 
-
-
-所遇问题
-输出格式有问题
-打包pip install 包
-python2.7 卸载失败问题
-open函数传参数出错
-Python编码错误的解决办法SyntaxError: Non-ASCII character ‘\xe5’ in file
-RuntimeError: dictionary changed size during iteration
-VScode code runner无法运行出正确的结果
-
-
-技术知识点
-遍历文件夹下的文件名
-字符串操作
-字符串切割
-替换字符串钟的匹配项
-字符串相似度比较
-
-
-列表相关操作
-两个列表取交集
-列表取并集
-列表取差集
-列表排序（更详...
+在外网机器Python的安装目录中新建一个文件夹，如packages：
+进入到packages文件夹下，shift按住，鼠标右键“在此处打开命令行”，输入piplist查看系统中安装了哪些python包，如下：
+把所有包名及版本号，重定向到requirements.txt中1pip freeze &gt;requi...
             </div>
             <!-- read more -->
             
@@ -511,43 +493,20 @@ VScode code runner无法运行出正确的结果
                 <span class="abstract-title-text">下载过慢</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-Windows
-浏览器
-npm
-设置代理
-换源
-设置代理和换源的区别
-
-
-git(linux相同)
-
-
-Linux下设置代理
-npm设置代理
-npm 查看一个包的版本信息
-npm 安装指定版本的包
-
-
-yarn
-yarn安装
-
-
-pip 下载过慢
-swithcyomegy配置
-
-
-
-
-
-Windows#浏览器#windows不要开全局模式，使用命令行下载会出一些问题。用直连或者PAC模式，用浏览器代理，使用插件switchyomega
+                Windows#浏览器#windows不要开全局模式，使用命令行下载会出一些问题。用直连或者PAC模式，用浏览器代理，使用插件switchyomega
 npm#npm在windows下载过慢一般两个办法，换源或设置代理，linux也是这个思路。
 设置代理#先打开小飞机。使用命令行
-1npm co...
+1npm config set proxy http://server:port
+
+
+server一般就是127.0.0.1port一般是1080
+
+因为是在本地使用的，所以server为localhost
+查看状态：
+1npm config list
+
+删除代理：
+1npm config delete pro...
             </div>
             <!-- read more -->
             
@@ -586,22 +545,7 @@ npm#npm在windows下载过慢一般两个办法，换源或设置代理，linux�
                 <span class="abstract-title-text">Docker</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-docker下载
-Docker安装
-docker启动失败
-
-
-
-
-
-
-
-docker下载#Docker安装#1）卸载旧版本yum list installed | grep docker 列出当前所有docker的包yum -y remove docker的包名称 卸载docker包rm -rf /var/lib/docker 删除docker的所有镜像和容器2）安装必要的软件包sudo yum install -y yum-utils \ device-mapper-persistent-data \ lvm23）设置下载的镜像仓库sudo yum-config-manage...
+                docker下载#Docker安装#1）卸载旧版本yum list installed | grep docker 列出当前所有docker的包yum -y remove docker的包名称 卸载docker包rm -rf /var/lib/docker 删除docker的所有镜像和容器2）安装必要的软件包sudo yum install -y yum-utils \ device-mapper-persistent-data \ lvm23）设置下载的镜像仓库sudo yum-config-manager \ –add-repo \ https://download.docker.c...
             </div>
             <!-- read more -->
             
@@ -638,25 +582,11 @@ docker下载#Docker安装#1）卸载旧版本yum list installed | grep docker �
                 <span class="abstract-title-text">数据库</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-Mysql
-mysql官网下载老版本
-centos安装mysql
-Navicat连接mysql出现1130 - Host XXX is not allowed to connect to this MySQL server
-
-
-
-
-
-
-
-Mysql#mysql官网下载老版本#下载网址，可选操作系统
+                Mysql#mysql官网下载老版本#下载网址，可选操作系统
 进入后依次选择：DOWNLOADS（下载）——&gt;Community(社区)——MySQL Community Downloads进入后往下拉，如下图选择Looking for previous GA versions（寻找以前的GA版本）
-centos安装mysql#本地下载m...
+centos安装mysql#本地下载mysql，但是xftp上传太慢，暂未找到解决的办法，所以尝试下面这个方法。
+1 下载并安装MySQL官方的 Yum Repository
+1wget -i -c http://dev.mysql.com/get/mysql57-community-...
             </div>
             <!-- read more -->
             
@@ -697,39 +627,7 @@ centos安装mysql#本地下载m...
                 <span class="abstract-title-text">git操作</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-config相关命令
-查看配置信息
-设置/修改配置信息
-
-
-查看提交记录
-查看指定文件的历史提交记录
-查看每次提交的内容差异
-根据哈希值查看修改代码细节
-单词层面上的对比
-图形化查看提交历史
-提取git中某个文件的所有版本并按顺序命名
-git将远程分支按分支名在本地建立文件夹
-
-
-git 基本使用流程
-git pull 与 git push 详解
-将本地代码上传到远程仓库
-分支的使用
-整合分支
-
-
-
-
-
-
-
-config相关命令#查看配置信息#
+                config相关命令#查看配置信息#
 查看系统config
 
 1git config --system --list
@@ -737,7 +635,19 @@ config相关命令#查看配置信息#
 
 查看当前用户（global）配置
 
-1git co...
+1git config --global  --list
+
+
+查看当前仓库配置信息
+
+1git config -- local    --list
+
+设置/修改配置信息#设置用户名：
+1git config --global user.name &quot;github用户名&quot;
+
+设置邮箱
+1git config --global user.email &quot;github注册邮箱&quot;
+查看提交记录#查看指定文...
             </div>
             <!-- read more -->
             
@@ -778,31 +688,20 @@ config相关命令#查看配置信息#
                 <span class="abstract-title-text">零散知识</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-Windows重启打印机服务
-Win10开机自启动软件
-模糊照片变高清
-Win10查看电脑配置信息和型号
-使用dxdiag命令检查电脑配置
-使用diskmtgt.msc命令进入磁盘管理，查看硬盘大小及已使用的空间。
-
-
-
-
-
-
-
-Windows重启打印机服务#有时候需要重启打印机，采用命令行的方式。
+                Windows重启打印机服务#有时候需要重启打印机，采用命令行的方式。
 
 Win+R ：services.msc  找到 Print Spooler 重启。
 
 Win10开机自启动软件#把该应用程序的快捷方式放到“系统启动文件夹”里；
 
-C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Start...
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+模糊照片变高清#访问 
+
+bigjpg.com
+
+将照片扔上去就好。
+Win10查看电脑配置信息和型号#使用dxdiag命令检查电脑配置# 按下键盘上的Win+R组合键，打开运行窗口，输入dxdiag，点击确定。 在打开的页面中就可...
             </div>
             <!-- read more -->
             
@@ -841,55 +740,34 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Start...
                 <span class="abstract-title-text">工具（office、IDE、编辑器等）快捷键集合</span>
             </a>
             <div class="abstract-content">
-                
+                jupyter#Cell中 Code 和 Markdown的切换#
+在一个cell中（在command模式下） 按下 y, 进入Code 按下m, 进入Markdown
+
+VSCode#快速重启#打开命令面板：
+1Ctrl+shift+p
+输入：
+1Reload Window
+查询#
+寻找文件夹中的文本内容 
 
 
+ 工具栏，编辑-&gt;查找
 
 
-jupyter
-Cell中 Code 和 Markdown的切换
+查找文件夹中的文件：
 
 
-VSCode
-快速重启
-查询
-列选择快捷键
+ctrl+p
 
+列选择快捷键#
+不小心关闭了某个页面#恢复： 
 
-不小心关闭了某个页面
-IDE
-intellij idea快速生成main方法、for循环、out输出
+ctrl+shift+t
 
+IDE#intellij idea快速生成main方法、for循环、out输出#2.快速向下复制一行
+1Ctrl+d
 
-快速开启powershell
-Everything很多文件搜索不到
-Word
-项目封面问题
-
-
-PPT
-Excel
-代码对比工具
-sublime
-
-
-SSH客户端
-MobaXterm
-复制
-粘贴
-下载文件到本地
-修改字体
-
-
-
-
-
-
-
-
-
-jupyter#Cell中 Code 和 Markdown的切换#
-在一个cell中（在command模式下） 按下 y...
+快速...
             </div>
             <!-- read more -->
             
@@ -928,23 +806,7 @@ jupyter#Cell中 Code 和 Markdown的切换#
                 <span class="abstract-title-text">Linux知识点</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-分区+挂载
-分区
-挂载
-解除挂载
-
-
-
-
-
-
-
-分区+挂载#分区#详细信息：来源该博客
+                分区+挂载#分区#详细信息：来源该博客
 
 在linux下，一个硬盘要先分区，然后才能挂载到目录上。和windows相同。
 
@@ -1002,50 +864,19 @@ jupyter#Cell中 Code 和 Markdown的切换#
                 <span class="abstract-title-text">Linux常用命令</span>
             </a>
             <div class="abstract-content">
-                
+                复制/移动文件、文件改名#
+cp /xx/xx(a)  /xx/xx(a)   :复制   ~~~~  //将a复制到b
+mv /xx /xx /xx/xx :剪切
+mv 旧文件夹名 新文件夹名   //更改名字
 
+查看端口#查看某个服务的状态#1service ‘servicename’ status
 
+例子
+1service sshd status //查看sshd服务的状态，可以看到它的进程号，如果不需要可以kill 杀死
 
+lsof -i:端口号#可以看到 8000 端口已经被轻 nodejs 服务占用。
 
-复制/移动文件、文件改名
-查看端口
-查看某个服务的状态
-lsof -i:端口号
-netstat -tunlp | grep 端口号  
-kill(杀死进程)
-telnet(检测端口是否可用)
-
-
-touch命令(创建文件)
-cat命令(显示文件内容)
-Centos7特性
-防火墙
-开启端口（以80为例）
-重启防火墙
-
-
-修改主机名
-debian/ubuntu系列
-redhat/centos系列
-
-
-vim相关操作
-复制
-粘贴
-删除
-查找
-设置行号
-跳到指定行
-文件上下翻转
-撤销上一步操作
-vim编辑
-多窗口功能
-缩进
-
-
-设置 SSH 通过密钥登录
-制作密钥对
-在服务器上安装公钥...
+netstat -tunlp | grep 端口号  #用于显示 tcp...
             </div>
             <!-- read more -->
             
@@ -1082,25 +913,16 @@ vim编辑
                 <span class="abstract-title-text">Jenkins知识点</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-流水线语法找不到模板
-Publish over ssh连接失败
-无法执行远程脚本
-
-
-
-
-
-流水线语法找不到模板#有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了publish over ssh插件就会出现这个选项，但是当时没有。
+                流水线语法找不到模板#有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了publish over ssh插件就会出现这个选项，但是当时没有。
 解决办法：重启jenkins。初始域名后面加/restart
 1ip:port/restart
 Publish over ssh连接失败#解决办法：这里要填密钥的密码
 无法执行远程脚本#
-背景：创建一个jenkins作业，通过ssh在另一台服务器上运行脚本，实现从harbor仓库拉取docker镜像，并运行。问题： 运行j...
+背景：创建一个jenkins作业，通过ssh在另一台服务器上运行脚本，实现从harbor仓库拉取docker镜像，并运行。问题： 运行jenkins作业/流水线，在对应的服务器没有镜像和运行的容器，且构建过程没有错误输出。
+
+
+
+分析：由...
             </div>
             <!-- read more -->
             

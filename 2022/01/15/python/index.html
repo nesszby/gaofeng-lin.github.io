@@ -19,12 +19,12 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="所遇问题 输出格式有问题 打包pip install 包 python2.7 卸载失败问题 open函数传参数出错 Python编码错误的解决办法SyntaxError: Non-ASCII character ‘\xe5’ in file RuntimeError: dictionary changed size during iteration VScode code runner无">
+    <meta name="description" content="所遇问题#输出格式有问题#背景：python2.7，IDE：VSCode源码：two.txt: 输出：预期应该为商品，单价，数量。 修改最后一行的print 打包pip install 包# 背景：内网需要安装python和一些包，无法连互联网，只能外网下载再u盘拷过去。   在外网机器Python的安装目录中新建一个文件夹，如packages： 进入到packages文件夹下，shift按住，鼠">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python">
 <meta property="og:url" content="http://example.com/2022/01/15/python/index.html">
 <meta property="og:site_name" content="Welcome to my Blog">
-<meta property="og:description" content="所遇问题 输出格式有问题 打包pip install 包 python2.7 卸载失败问题 open函数传参数出错 Python编码错误的解决办法SyntaxError: Non-ASCII character ‘\xe5’ in file RuntimeError: dictionary changed size during iteration VScode code runner无">
+<meta property="og:description" content="所遇问题#输出格式有问题#背景：python2.7，IDE：VSCode源码：two.txt: 输出：预期应该为商品，单价，数量。 修改最后一行的print 打包pip install 包# 背景：内网需要安装python和一些包，无法连互联网，只能外网下载再u盘拷过去。   在外网机器Python的安装目录中新建一个文件夹，如packages： 进入到packages文件夹下，shift按住，鼠">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/aad38ed43cf14169a81178f15d5cab6b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/30f55f74a6f04008af34c386d4ac4631.png">
@@ -45,7 +45,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/6eef8ba7ef9e47a9bbef68a0918f3b94.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/27eafe4c3413473b8de9f92567056d70.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2022-01-15T08:22:46.923Z">
-<meta property="article:modified_time" content="2022-01-15T08:24:40.203Z">
+<meta property="article:modified_time" content="2022-01-15T08:30:38.453Z">
 <meta property="article:author" content="Gaofeng Lin">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
@@ -353,7 +353,7 @@
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">8k</span>Reading time: <span class="post-count reading-time">36 min</span></span>
+                        <span>Word count: <span class="post-count word-count">7.7k</span>Reading time: <span class="post-count reading-time">35 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -514,64 +514,7 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <div class="toc">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#suo-yu-wen-ti">所遇问题</a><ul>
-<li><a href="#shu-chu-ge-shi-you-wen-ti">输出格式有问题</a></li>
-<li><a href="#da-bao-pip-install-bao">打包pip install 包</a></li>
-<li><a href="#python2-7-xie-zai-shi-bai-wen-ti">python2.7 卸载失败问题</a></li>
-<li><a href="#open-han-shu-chuan-can-shu-chu-cuo">open函数传参数出错</a></li>
-<li><a href="#python-bian-ma-cuo-wu-de-jie-jue-ban-fa-syntaxerror-non-ascii-character-xe5-in-file">Python编码错误的解决办法SyntaxError: Non-ASCII character ‘\xe5’ in file</a></li>
-<li><a href="#runtimeerror-dictionary-changed-size-during-iteration">RuntimeError: dictionary changed size during iteration</a></li>
-<li><a href="#vscode-code-runner-wu-fa-yun-xing-chu-zheng-que-de-jie-guo">VScode code runner无法运行出正确的结果</a></li>
-</ul>
-</li>
-<li><a href="#ji-zhu-zhi-shi-dian">技术知识点</a><ul>
-<li><a href="#bian-li-wen-jian-jia-xia-de-wen-jian-ming">遍历文件夹下的文件名</a></li>
-<li><a href="#zi-fu-chuan-cao-zuo">字符串操作</a><ul>
-<li><a href="#zi-fu-chuan-qie-ge">字符串切割</a></li>
-<li><a href="#ti-huan-zi-fu-chuan-zhong-de-pi-pei-xiang">替换字符串钟的匹配项</a></li>
-<li><a href="#zi-fu-chuan-xiang-si-du-bi-jiao">字符串相似度比较</a></li>
-</ul>
-</li>
-<li><a href="#lie-biao-xiang-guan-cao-zuo">列表相关操作</a><ul>
-<li><a href="#liang-ge-lie-biao-qu-jiao-ji">两个列表取交集</a></li>
-<li><a href="#lie-biao-qu-bing-ji">列表取并集</a></li>
-<li><a href="#lie-biao-qu-chai-ji">列表取差集</a></li>
-<li><a href="#lie-biao-pai-xu-geng-xiang-xi-cao-zuo-jian-wen-dang">列表排序（更详细操作见文档）</a></li>
-<li><a href="#lie-biao-ti-huan-yuan-su-geng-xiang-xi-cao-zuo-jian-wen-dang">列表替换元素（更详细操作见文档）</a></li>
-</ul>
-</li>
-<li><a href="#xml-xiang-guan-cao-zuo">XML相关操作</a><ul>
-<li><a href="#chuang-jian-yi-ge-xml-wen-dang">创建一个XML文档</a></li>
-<li><a href="#dui-xian-you-xml-wen-dang-jin-xing-xiu-gai">对现有XML文档进行修改</a></li>
-</ul>
-</li>
-<li><a href="#pan-duan-mu-lu-xia-de-kong-wen-jian-jia-bing-shan-chu">判断目录下的空文件夹并删除</a></li>
-<li><a href="#shen-kao-bei-deep-copy">深拷贝–deep copy</a></li>
-<li><a href="#bian-liang-lei-xing-pan-duan">变量类型判断</a></li>
-<li><a href="#json-xiang-guan-cao-zuo">json相关操作</a></li>
-<li><a href="#zi-dian-xiang-guan-cao-zuo">字典相关操作</a><ul>
-<li><a href="#ru-he-jian-cha-zi-dian-python-zhong-shi-fou-cun-zai-mou-ge-zhi">如何检查字典(Python)中是否存在某个值</a></li>
-</ul>
-</li>
-<li><a href="#qiang-zhi-jie-shu-cheng-xu">强制结束程序</a></li>
-</ul>
-</li>
-<li><a href="#zhi-shi-dian">知识点</a><ul>
-<li><a href="#from-import-he-import-de-qu-bie">from import和import的区别</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-
-<h1><span id="suo-yu-wen-ti">所遇问题</span><a href="#suo-yu-wen-ti" class="header-anchor">#</a></h1><h2><span id="shu-chu-ge-shi-you-wen-ti">输出格式有问题</span><a href="#shu-chu-ge-shi-you-wen-ti" class="header-anchor">#</a></h2><p>背景：python2.7，IDE：VSCode<br>源码：<br><img src="https://img-blog.csdnimg.cn/aad38ed43cf14169a81178f15d5cab6b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>two.txt:<br><img src="https://img-blog.csdnimg.cn/30f55f74a6f04008af34c386d4ac4631.png" alt="在这里插入图片描述"></p>
+        <h1><span id="suo-yu-wen-ti">所遇问题</span><a href="#suo-yu-wen-ti" class="header-anchor">#</a></h1><h2><span id="shu-chu-ge-shi-you-wen-ti">输出格式有问题</span><a href="#shu-chu-ge-shi-you-wen-ti" class="header-anchor">#</a></h2><p>背景：python2.7，IDE：VSCode<br>源码：<br><img src="https://img-blog.csdnimg.cn/aad38ed43cf14169a81178f15d5cab6b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>two.txt:<br><img src="https://img-blog.csdnimg.cn/30f55f74a6f04008af34c386d4ac4631.png" alt="在这里插入图片描述"></p>
 <p>输出：<br><img src="https://img-blog.csdnimg.cn/006fd38c10064562b5261b067cd0d0e8.png" alt="在这里插入图片描述"><br>预期应该为商品，单价，数量。</p>
 <p>修改最后一行的print<br><img src="https://img-blog.csdnimg.cn/be1c33ec8b6e4593806ab989758d5641.png" alt="在这里插入图片描述"></p>
 <h2><span id="da-bao-pip-install-bao">打包pip install 包</span><a href="#da-bao-pip-install-bao" class="header-anchor">#</a></h2><blockquote>
@@ -900,7 +843,7 @@
             <p>Author：<a href="http://example.com">Gaofeng Lin</a>
             <p>Link：<a href="http://example.com/2022/01/15/python/">http://example.com/2022/01/15/python/</a>
             <p>Publish date：<a href="http://example.com/2022/01/15/python/">January 15th 2022, 4:22:46 pm</a>
-            <p>Update date：<a href="http://example.com/2022/01/15/python/">January 15th 2022, 4:24:40 pm</a>
+            <p>Update date：<a href="http://example.com/2022/01/15/python/">January 15th 2022, 4:30:38 pm</a>
             <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     

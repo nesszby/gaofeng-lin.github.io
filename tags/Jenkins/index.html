@@ -434,25 +434,16 @@
                 <span class="abstract-title-text">Jenkins知识点</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-流水线语法找不到模板
-Publish over ssh连接失败
-无法执行远程脚本
-
-
-
-
-
-流水线语法找不到模板#有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了publish over ssh插件就会出现这个选项，但是当时没有。
+                流水线语法找不到模板#有时候在“流水线语言”板块找不到模板，即使安装了相对于的插件。如上图，安装了publish over ssh插件就会出现这个选项，但是当时没有。
 解决办法：重启jenkins。初始域名后面加/restart
 1ip:port/restart
 Publish over ssh连接失败#解决办法：这里要填密钥的密码
 无法执行远程脚本#
-背景：创建一个jenkins作业，通过ssh在另一台服务器上运行脚本，实现从harbor仓库拉取docker镜像，并运行。问题： 运行j...
+背景：创建一个jenkins作业，通过ssh在另一台服务器上运行脚本，实现从harbor仓库拉取docker镜像，并运行。问题： 运行jenkins作业/流水线，在对应的服务器没有镜像和运行的容器，且构建过程没有错误输出。
+
+
+
+分析：由...
             </div>
             <!-- read more -->
             

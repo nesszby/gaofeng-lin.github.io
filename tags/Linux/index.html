@@ -434,25 +434,11 @@
                 <span class="abstract-title-text">数据库</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-Mysql
-mysql官网下载老版本
-centos安装mysql
-Navicat连接mysql出现1130 - Host XXX is not allowed to connect to this MySQL server
-
-
-
-
-
-
-
-Mysql#mysql官网下载老版本#下载网址，可选操作系统
+                Mysql#mysql官网下载老版本#下载网址，可选操作系统
 进入后依次选择：DOWNLOADS（下载）——&gt;Community(社区)——MySQL Community Downloads进入后往下拉，如下图选择Looking for previous GA versions（寻找以前的GA版本）
-centos安装mysql#本地下载m...
+centos安装mysql#本地下载mysql，但是xftp上传太慢，暂未找到解决的办法，所以尝试下面这个方法。
+1 下载并安装MySQL官方的 Yum Repository
+1wget -i -c http://dev.mysql.com/get/mysql57-community-...
             </div>
             <!-- read more -->
             
@@ -493,39 +479,7 @@ centos安装mysql#本地下载m...
                 <span class="abstract-title-text">git操作</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-config相关命令
-查看配置信息
-设置/修改配置信息
-
-
-查看提交记录
-查看指定文件的历史提交记录
-查看每次提交的内容差异
-根据哈希值查看修改代码细节
-单词层面上的对比
-图形化查看提交历史
-提取git中某个文件的所有版本并按顺序命名
-git将远程分支按分支名在本地建立文件夹
-
-
-git 基本使用流程
-git pull 与 git push 详解
-将本地代码上传到远程仓库
-分支的使用
-整合分支
-
-
-
-
-
-
-
-config相关命令#查看配置信息#
+                config相关命令#查看配置信息#
 查看系统config
 
 1git config --system --list
@@ -533,7 +487,19 @@ config相关命令#查看配置信息#
 
 查看当前用户（global）配置
 
-1git co...
+1git config --global  --list
+
+
+查看当前仓库配置信息
+
+1git config -- local    --list
+
+设置/修改配置信息#设置用户名：
+1git config --global user.name &quot;github用户名&quot;
+
+设置邮箱
+1git config --global user.email &quot;github注册邮箱&quot;
+查看提交记录#查看指定文...
             </div>
             <!-- read more -->
             
@@ -574,23 +540,7 @@ config相关命令#查看配置信息#
                 <span class="abstract-title-text">Linux知识点</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-分区+挂载
-分区
-挂载
-解除挂载
-
-
-
-
-
-
-
-分区+挂载#分区#详细信息：来源该博客
+                分区+挂载#分区#详细信息：来源该博客
 
 在linux下，一个硬盘要先分区，然后才能挂载到目录上。和windows相同。
 
@@ -648,50 +598,19 @@ config相关命令#查看配置信息#
                 <span class="abstract-title-text">Linux常用命令</span>
             </a>
             <div class="abstract-content">
-                
+                复制/移动文件、文件改名#
+cp /xx/xx(a)  /xx/xx(a)   :复制   ~~~~  //将a复制到b
+mv /xx /xx /xx/xx :剪切
+mv 旧文件夹名 新文件夹名   //更改名字
 
+查看端口#查看某个服务的状态#1service ‘servicename’ status
 
+例子
+1service sshd status //查看sshd服务的状态，可以看到它的进程号，如果不需要可以kill 杀死
 
+lsof -i:端口号#可以看到 8000 端口已经被轻 nodejs 服务占用。
 
-复制/移动文件、文件改名
-查看端口
-查看某个服务的状态
-lsof -i:端口号
-netstat -tunlp | grep 端口号  
-kill(杀死进程)
-telnet(检测端口是否可用)
-
-
-touch命令(创建文件)
-cat命令(显示文件内容)
-Centos7特性
-防火墙
-开启端口（以80为例）
-重启防火墙
-
-
-修改主机名
-debian/ubuntu系列
-redhat/centos系列
-
-
-vim相关操作
-复制
-粘贴
-删除
-查找
-设置行号
-跳到指定行
-文件上下翻转
-撤销上一步操作
-vim编辑
-多窗口功能
-缩进
-
-
-设置 SSH 通过密钥登录
-制作密钥对
-在服务器上安装公钥...
+netstat -tunlp | grep 端口号  #用于显示 tcp...
             </div>
             <!-- read more -->
             
@@ -728,29 +647,10 @@ vim编辑
                 <span class="abstract-title-text">Linux Shell 命令</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-实际命令分析
-git log –follow –pretty=format:%H 文件名 | xargs -I{} sh -c ‘git show {}:文件名 &gt; 文件名.{}’
-git branch -r | xargs -d/ -n1 | grep -v ‘origin’ | xargs -I{} sh -c ‘mkdir “C:\Users\76585\Desktop\try{}” ‘
-
-
-代码分析
-读取文件夹中的文件名，并存入列表
-
-
-变量
-获取变量字符串长度
-变量截取
-变量的字符串替换
-删除字符串
-变量为空时赋默认值
-字符串拼接
-单引号内引入变量
-实战：统计文...
+                实际命令分析#git log –follow –pretty=format:%H 文件名 | xargs -I{} sh -c ‘git show {}:文件名 &gt; 文件名.{}’#提取git中某个文件的所有版本并按顺序命名:
+1git log --follow --pretty=format:%H 文件名 | xargs -I&#123;&#125; sh -c &#x27;git show &#123;&#125;:文件名 &gt; 文件名.&#123;&#125;&#x27;
+简略解释版本：
+12345678910111213git log --follow --pretty...
             </div>
             <!-- read more -->
             

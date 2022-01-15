@@ -434,43 +434,20 @@
                 <span class="abstract-title-text">下载过慢</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-Windows
-浏览器
-npm
-设置代理
-换源
-设置代理和换源的区别
-
-
-git(linux相同)
-
-
-Linux下设置代理
-npm设置代理
-npm 查看一个包的版本信息
-npm 安装指定版本的包
-
-
-yarn
-yarn安装
-
-
-pip 下载过慢
-swithcyomegy配置
-
-
-
-
-
-Windows#浏览器#windows不要开全局模式，使用命令行下载会出一些问题。用直连或者PAC模式，用浏览器代理，使用插件switchyomega
+                Windows#浏览器#windows不要开全局模式，使用命令行下载会出一些问题。用直连或者PAC模式，用浏览器代理，使用插件switchyomega
 npm#npm在windows下载过慢一般两个办法，换源或设置代理，linux也是这个思路。
 设置代理#先打开小飞机。使用命令行
-1npm co...
+1npm config set proxy http://server:port
+
+
+server一般就是127.0.0.1port一般是1080
+
+因为是在本地使用的，所以server为localhost
+查看状态：
+1npm config list
+
+删除代理：
+1npm config delete pro...
             </div>
             <!-- read more -->
             
@@ -509,39 +486,7 @@ npm#npm在windows下载过慢一般两个办法，换源或设置代理，linux�
                 <span class="abstract-title-text">git操作</span>
             </a>
             <div class="abstract-content">
-                
-
-
-
-
-config相关命令
-查看配置信息
-设置/修改配置信息
-
-
-查看提交记录
-查看指定文件的历史提交记录
-查看每次提交的内容差异
-根据哈希值查看修改代码细节
-单词层面上的对比
-图形化查看提交历史
-提取git中某个文件的所有版本并按顺序命名
-git将远程分支按分支名在本地建立文件夹
-
-
-git 基本使用流程
-git pull 与 git push 详解
-将本地代码上传到远程仓库
-分支的使用
-整合分支
-
-
-
-
-
-
-
-config相关命令#查看配置信息#
+                config相关命令#查看配置信息#
 查看系统config
 
 1git config --system --list
@@ -549,7 +494,19 @@ config相关命令#查看配置信息#
 
 查看当前用户（global）配置
 
-1git co...
+1git config --global  --list
+
+
+查看当前仓库配置信息
+
+1git config -- local    --list
+
+设置/修改配置信息#设置用户名：
+1git config --global user.name &quot;github用户名&quot;
+
+设置邮箱
+1git config --global user.email &quot;github注册邮箱&quot;
+查看提交记录#查看指定文...
             </div>
             <!-- read more -->
             
