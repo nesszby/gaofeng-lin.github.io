@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/249f2d65516c483a9517f8ce5affb72f.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/1f2c3d8b692b42619534a683d2c3f21a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_11,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2022-01-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-01-16T14:48:36.756Z">
+<meta property="article:modified_time" content="2022-01-17T05:30:04.378Z">
 <meta property="article:author" content="Gaofeng Lin">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="运维">
@@ -357,7 +357,7 @@
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">2k</span>Reading time: <span class="post-count reading-time">7 min</span></span>
+                        <span>Word count: <span class="post-count word-count">2.1k</span>Reading time: <span class="post-count reading-time">8 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -551,6 +551,8 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git show 哈希值 文件名 //具体某个文件的变化</span><br></pre></td></tr></table></figure>
 
+<h2><span id="gen-ju-fen-zhi-huo-yong-hu-cha-kan-ti-jiao-xin-xi">根据分支或用户查看提交信息</span><a href="#gen-ju-fen-zhi-huo-yong-hu-cha-kan-ti-jiao-xin-xi" class="header-anchor">#</a></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git log 分支名</span><br><span class="line"></span><br><span class="line">git log --authot=&#x27;用户名&#x27;</span><br><span class="line">//这两个命令可以通过 | xargs  与 git show搭配用</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <h2><span id="dan-ci-ceng-mian-shang-de-dui-bi">单词层面上的对比</span><a href="#dan-ci-ceng-mian-shang-de-dui-bi" class="header-anchor">#</a></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log --word-diff -- &lt;file&gt;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
@@ -674,7 +676,7 @@
             <p>Author：<a href="http://example.com">Gaofeng Lin</a>
             <p>Link：<a href="http://example.com/2022/01/14/git%E6%93%8D%E4%BD%9C/">http://example.com/2022/01/14/git%E6%93%8D%E4%BD%9C/</a>
             <p>Publish date：<a href="http://example.com/2022/01/14/git%E6%93%8D%E4%BD%9C/">January 14th 2022, 12:00:00 am</a>
-            <p>Update date：<a href="http://example.com/2022/01/14/git%E6%93%8D%E4%BD%9C/">January 16th 2022, 10:48:36 pm</a>
+            <p>Update date：<a href="http://example.com/2022/01/14/git%E6%93%8D%E4%BD%9C/">January 17th 2022, 1:30:04 pm</a>
             <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -832,7 +834,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">config相关命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.1.</span> <span class="toc-text">查看配置信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.2.</span> <span class="toc-text">设置&#x2F;修改配置信息</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">查看提交记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.1.</span> <span class="toc-text">查看指定文件的历史提交记录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.2.</span> <span class="toc-text">查看每次提交的内容差异</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.3.</span> <span class="toc-text">根据哈希值查看修改代码细节</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.4.</span> <span class="toc-text">单词层面上的对比</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.5.</span> <span class="toc-text">图形化查看提交历史</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.6.</span> <span class="toc-text">提取git中某个文件的所有版本并按顺序命名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.7.</span> <span class="toc-text">git将远程分支按分支名在本地建立文件夹</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">git 基本使用流程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.1.</span> <span class="toc-text">git pull 与 git push 详解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.2.</span> <span class="toc-text">将本地代码上传到远程仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.3.</span> <span class="toc-text">分支的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.4.</span> <span class="toc-text">整合分支</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">config相关命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.1.</span> <span class="toc-text">查看配置信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.2.</span> <span class="toc-text">设置&#x2F;修改配置信息</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">查看提交记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.1.</span> <span class="toc-text">查看指定文件的历史提交记录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.2.</span> <span class="toc-text">查看每次提交的内容差异</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.3.</span> <span class="toc-text">根据哈希值查看修改代码细节</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.4.</span> <span class="toc-text">根据分支或用户查看提交信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.5.</span> <span class="toc-text">单词层面上的对比</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.6.</span> <span class="toc-text">图形化查看提交历史</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.7.</span> <span class="toc-text">提取git中某个文件的所有版本并按顺序命名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.8.</span> <span class="toc-text">git将远程分支按分支名在本地建立文件夹</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">git 基本使用流程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.1.</span> <span class="toc-text">git pull 与 git push 详解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.2.</span> <span class="toc-text">将本地代码上传到远程仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.3.</span> <span class="toc-text">分支的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.4.</span> <span class="toc-text">整合分支</span></a></li></ol></li></ol>
             </div>
         
         <!-- sidebar -->
