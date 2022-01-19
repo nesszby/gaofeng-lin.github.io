@@ -542,20 +542,20 @@ cp /xx/xx(a)  /xx/xx(a)   :复制   ~~~~  //将a复制到b
 mv /xx /xx /xx/xx :剪切
 mv 旧文件夹名 新文件夹名   //更改名字
 
-查看端口#查看某个服务的状态#1service ‘servicename’ status
+查看端口#查看某个服务的状态#12service ‘servicename’ status//centos7以上用 systemctl
 
 例子
 1service sshd status //查看sshd服务的状态，可以看到它的进程号，如果不需要可以kill 杀死
 
 lsof -i:端口号#可以看到 8000 端口已经被轻 nodejs 服务占用。
 
-netstat -tunlp | grep 端口号  #用于显示 tcp...
+netstat -tunl...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/01/15">
+                <div class="abstract-date" title="Last updated: 2022/01/19">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/01/15</span>
                 </div>
                 <!-- tags -->
@@ -581,7 +581,7 @@ netstat -tunlp | grep 端口号  #用于显示 tcp...
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2022/01/15/Linux%20Shell%E5%91%BD%E4%BB%A4/">
+            <a class="abstract-title" href="/2022/01/15/Shell%E5%91%BD%E4%BB%A4/">
                 
                 <span class="abstract-title-text">Linux Shell 命令</span>
             </a>
@@ -897,6 +897,8 @@ netstat -tunlp | grep 端口号  #用于显示 tcp...
         
         
         
+        
+        
     
     
     
@@ -956,7 +958,7 @@ netstat -tunlp | grep 端口号  #用于显示 tcp...
         
         <li class="archive-post-item">
             <span class="archive-post-date">01/15</span>
-            <a class="archive-post-title" href="/2022/01/15/Linux%20Shell%E5%91%BD%E4%BB%A4/">Linux Shell 命令</a>
+            <a class="archive-post-title" href="/2022/01/15/Shell%E5%91%BD%E4%BB%A4/">Linux Shell 命令</a>
         </li>
     
         
