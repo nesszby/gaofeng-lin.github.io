@@ -27,8 +27,9 @@
 <meta property="og:description" content="实际命令分析#git log –follow –pretty&#x3D;format:%H 文件名 | xargs -I{} sh -c ‘git show {}:文件名 &gt; 文件名.{}’#提取git中某个文件的所有版本并按顺序命名: 1git log --follow --pretty&#x3D;format:%H 文件名 | xargs -I&amp;#123;&amp;#125; sh -c &amp;#x27;git sho">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/4f3976bb28594f89ab73d74c1d5b4448.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/bf86067e7f744920971af70e7249ade9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_12,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2022-01-15T07:49:30.400Z">
-<meta property="article:modified_time" content="2022-01-18T02:32:56.378Z">
+<meta property="article:modified_time" content="2022-01-19T00:19:23.480Z">
 <meta property="article:author" content="Gaofeng Lin">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="运维">
@@ -339,7 +340,7 @@
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">3.1k</span>Reading time: <span class="post-count reading-time">13 min</span></span>
+                        <span>Word count: <span class="post-count word-count">3.4k</span>Reading time: <span class="post-count reading-time">14 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -592,7 +593,11 @@
 <p><strong>注意的几点：</strong><br><strong>1、if和[ ]之间要空格。</strong></p>
 <p><strong>2、[ ]和“ ”之间要空格</strong></p>
 <p><strong>3、“ ”和=之间要空格，</strong></p>
-<h2><span id="shi-zhan-tong-ji-wen-zhang-dan-ci-qing-kuang">实战：统计文章单词情况</span><a href="#shi-zhan-tong-ji-wen-zhang-dan-ci-qing-kuang" class="header-anchor">#</a></h2><p>这里想要统计Martin Luther King在1963年著名的<strong>I have a dream</strong>演讲中都使用了哪些词，哪些是高频词，单词字长如何。<br><img src="https://img-blog.csdnimg.cn/4f3976bb28594f89ab73d74c1d5b4448.png" alt="在这里插入图片描述"><br>思路：<br>高频词统计：将所有单词单行输出，删除空行，删除<code>,./?</code>等非字母符号，用sort排序后使用uniq统计即可。<br>字长频数统计：将所有单词单行输出，删除空行，删除<code>,./?</code>等非字母符号，使用while循环遍历每个单词，使用`$</p>
+<h2><span id="shi-zhan-tong-ji-wen-zhang-dan-ci-qing-kuang">实战：统计文章单词情况</span><a href="#shi-zhan-tong-ji-wen-zhang-dan-ci-qing-kuang" class="header-anchor">#</a></h2><p>这里想要统计Martin Luther King在1963年著名的<strong>I have a dream</strong>演讲中都使用了哪些词，哪些是高频词，单词字长如何。<br><img src="https://img-blog.csdnimg.cn/4f3976bb28594f89ab73d74c1d5b4448.png" alt="在这里插入图片描述"><br>思路：<br>高频词统计：将所有单词单行输出，删除空行，删除<code>,./?</code>等非字母符号，用sort排序后使用uniq统计即可。<br>字长频数统计：将所有单词单行输出，删除空行，删除<code>,./?</code>等非字母符号，使用while循环遍历每个单词，使用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;#variable&#125; //统计单词长读频数。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># 高频词统计</span><br><span class="line">echo &quot;高频词统计：&quot;</span><br><span class="line">echo &quot;频数&quot; &quot;单词&quot;</span><br><span class="line">tr &quot; &quot; &quot;\n&quot; &lt;IHaveADream.txt | \</span><br><span class="line">#使用tr将空格转换成换行符，使得每行一个单词，\续行符表示一行命令未写完可换行书写，切记其后什么字符也不能接，包括空格和注释</span><br><span class="line">sed -e &quot;/[^a-Z]/d;/^$/d&quot; | \</span><br><span class="line">#使用sed匹配非字母字符和空行并删除：-e 表示执行多个操作； /[^a-Z]/，双斜线//表示匹配部分，^表示匹配除开后面a-Z的所有字符，d表示对前面匹配部分删除；/^$/表示匹配空行，^、$分别表示行首和行尾</span><br><span class="line">sort |uniq -c |    \</span><br><span class="line">#排序之后使用uniq统计，-c表示统计单词出现的次数</span><br><span class="line">sort -nr | column -t|head #将次数最多的单词排在前面，-n表示按数值排序，-r从大到小倒序排，column -t表格式输出</span><br><span class="line"></span><br><span class="line"># 字长频数统计</span><br><span class="line">echo</span><br><span class="line">echo &quot;字长频数统计：&quot;</span><br><span class="line">echo &quot;频数&quot; &quot;单词长度&quot;</span><br><span class="line">tr &quot; &quot; &quot;\n&quot; &lt;IHaveADream.txt | \</span><br><span class="line">sed -e &quot;/[^a-Z]/d;/^$/d&quot; | \</span><br><span class="line">while read word</span><br><span class="line">do</span><br><span class="line">  echo $&#123;#word&#125;</span><br><span class="line">done |\</span><br><span class="line"># 用while和read每次读入一个单词，使用$&#123;#word&#125;统计单词长度</span><br><span class="line">sort |uniq -c|sort -nr|column -t|head</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/bf86067e7f744920971af70e7249ade9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_12,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
 
     </article>
     <!-- license -->
@@ -601,7 +606,7 @@
             <p>Author：<a href="http://example.com">Gaofeng Lin</a>
             <p>Link：<a href="http://example.com/2022/01/15/Linux%20Shell%E5%91%BD%E4%BB%A4/">http://example.com/2022/01/15/Linux%20Shell%E5%91%BD%E4%BB%A4/</a>
             <p>Publish date：<a href="http://example.com/2022/01/15/Linux%20Shell%E5%91%BD%E4%BB%A4/">January 15th 2022, 3:49:30 pm</a>
-            <p>Update date：<a href="http://example.com/2022/01/15/Linux%20Shell%E5%91%BD%E4%BB%A4/">January 18th 2022, 10:32:56 am</a>
+            <p>Update date：<a href="http://example.com/2022/01/15/Linux%20Shell%E5%91%BD%E4%BB%A4/">January 19th 2022, 8:19:23 am</a>
             <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
