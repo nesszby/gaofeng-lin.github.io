@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-01-25T04:32:48.856Z</updated>
+  <updated>2022-01-26T04:03:09.737Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>算法总结</title>
-    <link href="http://example.com/2022/01/25/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"/>
-    <id>http://example.com/2022/01/25/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</id>
-    <published>2022-01-25T03:28:11.868Z</published>
-    <updated>2022-01-25T04:32:48.856Z</updated>
+    <link href="http://example.com/2022/01/26/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>http://example.com/2022/01/26/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</id>
+    <published>2022-01-25T16:00:00.000Z</published>
+    <updated>2022-01-26T04:03:09.737Z</updated>
     
     <content type="html"><![CDATA[<h1><span id="dong-tai-gui-hua-jie-ti-kuang-jia">动态规划解题框架</span><a href="#dong-tai-gui-hua-jie-ti-kuang-jia" class="header-anchor">#</a></h1><p>若确定给定问题具有重叠子问题和最优子结构，那么就可以使用动态规划求解。总体上看，求解可分为四步：</p><p><strong>1.状态定义</strong>： 构建问题最优解模型，包括问题最优解的定义、有哪些计算解的自变量；</p><p><strong>2.初始状态</strong>： 确定基础子问题的解（即已知解），原问题和子问题的解都是以基础子问题的解为起始点，在迭代计算中得到的；</p><p><strong>3.转移方程</strong>： 确定原问题的解与子问题的解之间的关系是什么，以及使用何种选择规则从子问题最优解组合中选出原问题最优解；</p><p><strong>4.返回值：</strong> 确定应返回的问题的解是什么，即动态规划在何处停止迭代；</p><p>完成以上步骤后，便容易写出对应的解题代码。</p><h2><span id="shi-li-fei-bo-na-qi-shu-lie">示例：斐波那契数列</span><a href="#shi-li-fei-bo-na-qi-shu-lie" class="header-anchor">#</a></h2><p>状态定义：一维 dp 列表，设第 ii个斐波那契数为 dp[i]；</p><p>初始状态：已知第 0 , 11个斐波那契数分别为 dp[0] = 0, dp[1] =  1 ；</p><p>转移方程：后一个数字等于前两个数字之和，即</p><p>dp[i]=dp[i−1]+dp[i−2]</p><p>返回值：需求取的第 n 个斐波那契数 dp[n] ；</p><h2><span id="shi-li-dan-gao-zui-gao-shou-jie">示例：蛋糕最高售价</span><a href="#shi-li-dan-gao-zui-gao-shou-jie" class="header-anchor">#</a></h2><p>状态定义：一维 dp 列表，设重量为 i 蛋糕的售价为 p(i) ，重量为 ii蛋糕切分后的最高售价为 dp[i] ；</p><p>初始状态：已知重量为 0 蛋糕的最高售价为 0 ，重量为 1 的蛋糕最高售价为 p(1) ；</p><p>转移方程：dp[n] 为 n 种切分组合中的最高售价组合，即</p><p><img src="https://img-blog.csdnimg.cn/100853ca38094c5997762c0b693ff41a.png" alt="在这里插入图片描述"></p><p>返回值：需求取的重量为 n 的蛋糕最高售价 dp[n] ；</p>]]></content>
     
