@@ -30,11 +30,12 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/b507309c987f41898b08f797c24c7f4c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_14,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/a53bf33bf4894fb7b610d2cf291071d0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2022-01-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-01-16T14:48:27.186Z">
+<meta property="article:modified_time" content="2022-02-08T03:58:01.478Z">
 <meta property="article:author" content="Gaofeng Lin">
 <meta property="article:tag" content="IDE">
 <meta property="article:tag" content="编辑器">
-<meta property="article:tag" content="小知识">
+<meta property="article:tag" content="照片模糊处理">
+<meta property="article:tag" content="win10">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/7ac995ab180c4465968809c73ea881cd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_14,color_FFFFFF,t_70,g_se,x_16">
     <meta http-equiv="Cache-control" content="no-cache">
@@ -337,14 +338,16 @@
     
         <a class="post-tag" href="javascript:void(0);" data-tags="编辑器">编辑器</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="小知识">小知识</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="照片模糊处理">照片模糊处理</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="win10">win10</a>
     
 </div>
 
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">351</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">557</span>Reading time: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -522,6 +525,10 @@
 <h2><span id="shi-yong-diskmtgt-msc-ming-ling-jin-ru-ci-pan-guan-li-cha-kan-ying-pan-da-xiao-ji-yi-shi-yong-de-kong-jian">使用diskmtgt.msc命令进入磁盘管理，查看硬盘大小及已使用的空间。</span><a href="#shi-yong-diskmtgt-msc-ming-ling-jin-ru-ci-pan-guan-li-cha-kan-ying-pan-da-xiao-ji-yi-shi-yong-de-kong-jian" class="header-anchor">#</a></h2><p><img src="https://img-blog.csdnimg.cn/b507309c987f41898b08f797c24c7f4c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_14,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>465.76GB就是500G的硬盘，不要怀疑是不是奸商给你的是假货，这是没有问题的，硬盘的生产厂家在生产硬盘时用的是1000进制，即1GB=1000MB；1MB=1000KB；1KB=1000B。而电脑的计算进制是1024，即1G=1024MB；1MB=1024KB；1kB=1024B，这样就会造成电脑检测出来的容量比标称容量小。</p>
 <p>  此外，除了以上方法也可以进入设备管理器里查看电脑配置信息，步骤：右击桌面上的“计算机”–&gt;“设备管理器”，在设备管理器中就可以看见电脑配置情况了</p>
 <p><img src="https://img-blog.csdnimg.cn/a53bf33bf4894fb7b610d2cf291071d0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6IiU54uXMeWPtw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h1><span id="win10-cha-kan-duan-kou-shi-yong-qing-kuang">win10查看端口使用情况</span><a href="#win10-cha-kan-duan-kou-shi-yong-qing-kuang" class="header-anchor">#</a></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">netstat [选项]</span><br><span class="line">具体选项可自主查询</span><br></pre></td></tr></table></figure>
+
+<p>使用示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">netstat -a      # 列出所有端口</span><br><span class="line"></span><br><span class="line">netstat -at     # 列出所有TCP端口</span><br><span class="line"></span><br><span class="line">netstat -au    # 列出所有UDP端口</span><br><span class="line"></span><br><span class="line">netstat -ax    # 列出所有unix端口</span><br><span class="line"></span><br><span class="line">netstat -atnlp    # 直接使用ip地址列出所有处理监听状态的TCP端口，且加上程序名</span><br><span class="line"></span><br><span class="line">netstat -ano     # 端口+显示ip+显示计时器</span><br><span class="line"></span><br><span class="line">netstat -ano |findstr &quot;端口号&quot;    #这个端口被哪个应用占用，实际输入端口号需要用引号括起来</span><br><span class="line"></span><br><span class="line">tasklist |findstr &quot;进程id号&quot;    #查看到对应的进程id之后，就可以通过id查找对应的进程名称</span><br><span class="line"></span><br><span class="line">taskkill /f /t /im &quot;进程id或者进程名称&quot;    #通过命令杀掉进程，或者是直接根据进程的名称杀掉所有的进程</span><br></pre></td></tr></table></figure>
 
     </article>
     <!-- license -->
@@ -530,7 +537,7 @@
             <p>Author：<a href="http://example.com">Gaofeng Lin</a>
             <p>Link：<a href="http://example.com/2022/01/14/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/">http://example.com/2022/01/14/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/</a>
             <p>Publish date：<a href="http://example.com/2022/01/14/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/">January 14th 2022, 12:00:00 am</a>
-            <p>Update date：<a href="http://example.com/2022/01/14/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/">January 16th 2022, 10:48:27 pm</a>
+            <p>Update date：<a href="http://example.com/2022/01/14/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/">February 8th 2022, 11:58:01 am</a>
             <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -688,7 +695,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Windows重启打印机服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Win10开机自启动软件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">模糊照片变高清</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">Win10查看电脑配置信息和型号</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.1.</span> <span class="toc-text">使用dxdiag命令检查电脑配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.2.</span> <span class="toc-text">使用diskmtgt.msc命令进入磁盘管理，查看硬盘大小及已使用的空间。</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Windows重启打印机服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Win10开机自启动软件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">模糊照片变高清</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">Win10查看电脑配置信息和型号</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.1.</span> <span class="toc-text">使用dxdiag命令检查电脑配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.2.</span> <span class="toc-text">使用diskmtgt.msc命令进入磁盘管理，查看硬盘大小及已使用的空间。</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">5.</span> <span class="toc-text">win10查看端口使用情况</span></a></li></ol>
             </div>
         
         <!-- sidebar -->
@@ -912,7 +919,7 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">01/15</span>
-            <a class="archive-post-title" href="/2022/01/15/%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%8C%89%E9%94%AE%EF%BC%88office%E3%80%81IDE%E3%80%81%E7%BC%96%E8%BE%91%E5%99%A8%E7%AD%89%EF%BC%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%9B%86%E5%90%88/">工具,按键（office、IDE、编辑器等）快捷键集合</a>
+            <a class="archive-post-title" href="/2022/01/15/%E5%B7%A5%E5%85%B7%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%9B%86%E5%90%88/">工具快捷键集合</a>
         </li>
     
         
@@ -1007,11 +1014,6 @@
                 编辑器
             </span>
         
-            <span class="sidebar-tag-name" data-tags="小知识">
-                <span class="iconfont-archer">&#xe606;</span>
-                小知识
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="git">
                 <span class="iconfont-archer">&#xe606;</span>
                 git
@@ -1070,6 +1072,16 @@
             <span class="sidebar-tag-name" data-tags="Java">
                 <span class="iconfont-archer">&#xe606;</span>
                 Java
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="照片模糊处理">
+                <span class="iconfont-archer">&#xe606;</span>
+                照片模糊处理
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="win10">
+                <span class="iconfont-archer">&#xe606;</span>
+                win10
             </span>
         
     </div>
